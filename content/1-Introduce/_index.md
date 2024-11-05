@@ -9,13 +9,13 @@ pre : " <b> 1. </b> "
 
 ## Architectural idea:
 * **User will convert and analyze markdown file through the following process:**
-* Markdown file is uploaded to S3 bucket.
-* SNS will receive notification from publisher that S3 bucket has new file pushed.
-* SNS will distribute notification to subscribers which are SQS queues.
-* SQS messages will be sent to lambda functions to perform tasks.
-* There are 2 main streams: conversion and sentimment analysis.
-* Lambda function in conversion stream will convert to html file and save to new s3 bucket.
-* Lambda function in sentiment analysis stream will analyze file sentiment and save data to dynamodb table.
+    * Markdown file is uploaded to S3 bucket.
+    * SNS will receive notification from publisher that S3 bucket has new file pushed.
+    * SNS will distribute notification to subscribers which are SQS queues.
+    * SQS messages will be sent to lambda functions to perform tasks.
+    * There are 2 main streams: conversion and sentimment analysis.
+    * Lambda function in conversion stream will convert to html file and save to new s3 bucket.
+    * Lambda function in sentiment analysis stream will analyze file sentiment and save data to dynamodb table.
 ## Service Introduction:
 
 **Amazon S3**: A reliable and scalable object storage service, S3 allows users to securely store and retrieve markdown files. When a file is uploaded to an S3 bucket, it triggers a notification to other services in the architecture, allowing for continuous transformation and analysis.

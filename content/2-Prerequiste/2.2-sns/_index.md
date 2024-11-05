@@ -13,7 +13,7 @@ pre : " <b> 2.2 </b> "
 * ![s3](/workshop-aws-card-clash-5/images/2.prerequisite/2.5.png)
 * In the Access policy section, select **Advanced**.
 * Copy and edit the policy content.
-``yaml
+```yaml
 {
   "Version": "2012-10-17",
   "Id": "example-ID",

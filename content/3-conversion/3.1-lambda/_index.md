@@ -26,7 +26,8 @@ After installing the library, we zip it again.
 * Then, we go to lambda, select **Layers**.
 
 * Select the **Create layer** button.
-* ![queue](/workshop-aws-card-clash-5/images/3.connect/zip2.png) * Name: **python-markdown**.
+* ![queue](/workshop-aws-card-clash-5/images/3.connect/zip2.png) 
+* Name: **python-markdown**.
 * Upload zip file.
 * Compatible runtimes choose python 3.12.
 * Select the **Create** button.
